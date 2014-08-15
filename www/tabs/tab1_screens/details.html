@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ons-page class="center">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">New Page for testdsfds</div>
+    </ons-toolbar>
+
+    <ul class="list list-top" id="main-list">
+
+        <li class="list__header">Android</li>
+        <li class="list__item list__item--tappable list__item__line-height">KitKat
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">Jelly Bean
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">Ice Cream Sandwich
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">Honeycomb
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+
+        <li class="list__header">Mac OS</li>
+
+        <li class="list__item list__item--tappable list__item__line-height">Mavericks
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">Mountain Lion
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">Lion
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+        <li class="list__item list__item--tappable list__item__line-height">SnowLeopard
+        <span class="list-item-action">
+          <i class="fa fa-angle-right"></i>
+        </span>
+        </li>
+
+    </ul>
+    <script type="text/javascript">
+        alert("add the listener");
+        //Get the element, add a click listener...
+        document.getElementById("main-list").addEventListener("click", function (e) {
+            // e.target is the clicked element!
+            // If it was a list item
+            if (e.target && e.target.nodeName == "LI") {
+                // List item found!  Output the ID!
+                alert("List item was clicked!");
+            }
+        });
+    </script>
+</ons-page>
+
+
+</body>
+</html>
